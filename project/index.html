@@ -1,0 +1,214 @@
+Angie Mendieta-Hernandez/index.html
+Web Design 1
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stff.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="fancy"
+<body>
+<h1 align="center">
+  <b>Nuames Athletic Club</b>
+</h1>
+<h4 align="center">
+  <b><i><font color="Purple">Come join the Nuames Athletic Club!</font></i></b>
+  <hr width="100%" align="left"/>
+</h4>
+<table border="1" style="width:40%" align="center">
+
+  <tr>
+
+    <p><th><b><nav><a href="new.html" onmousedown="Bop.play()" target="_blank">About</a></nav></th>
+    <p><th><b><nav><a href="prices.html" onmousedown="Bop.play()" target="_blank">Prices and Merchandise</a></nav></th>
+    <p><th><b><nav><a href="events.html" onmousedown="Bop.play()" target="_blank">Events</a></nav></th>
+    <p><th><b><nav><a href="sports.html" onmousedown="Bop.play()" target="_blank">Sports</a></nav></th>
+
+  </tr>
+
+</table>
+
+
+<div class="slideshow-container">
+
+<nav onmousedown="cheering.play()">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img style="border:10px solid black;" src="track1.jpg" width="920" height="550">
+  <div class="text">Track and Field</div>
+</div>
+</nav>
+
+<nav onmousedown="Bounce.play()">
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img style="border:10px solid black;" src="basketball1.jpg" width="920" height="550">
+  <div class="text">Basketball</div>
+</div>
+</nav>
+
+<nav onmousedown="soccer.play()">
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img style="border:10px solid black;" src="soccer1.jpg" width="920" height="550">
+  <div class="text">Soccer</div>
+</div>
+</nav>
+
+<nav onmousedown="smack.play()">
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img style="border:10px solid black;" src="volleyball1.jpg" width="920" height="550">
+  <div class="text">Volleyball</div>
+</div>
+</nav>
+
+<nav onmousedown="water.play()">
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img style="border:10px solid black;" src="swimming1.jpg" width="920" height="550">
+  <div class="text">Swimming</div>
+</div>
+</nav>
+
+<nav onmousedown="cheering.play()">
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img style="border:10px solid black;" src="running1.jpg" width="920" height="550">
+  <div class="text">Cross Country</div>
+</div>
+</nav>
+
+<nav onmousedown="tennisball.play()">
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img style="border:10px solid black;" src="tennis1.jpg" width="920" height="550">
+  <div class="text">Tennis</div>
+</div>
+</nav>
+
+<nav onmousedown="bowling.play()">
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img style="border:10px solid black;" src="bowling.jpg" width="920" height="550">
+  <div class="text">Bowling</div>
+</div>
+</nav>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<a href="https://davis.nuames.org/">
+  <img src="nuameslogo.png"
+style="width:180px; height:200px; border:0; position: absolute; top: 250px; left: 1135px;">
+</a>
+
+<a href="https://www.instagram.com/?hl=en">
+  <img src="instagram.png"
+style="width:90px; height:52px; border:0; position: absolute; top: 470px; left: 1150px;">
+</a>
+
+<a href="https://www.facebook.com/">
+  <img src="facebook.png"
+style="width:53px; height:50px; border:0; position: absolute; top: 535px; left: 1170px;">
+</a>
+
+<a href="https://twitter.com/">
+  <img src="twitter.png"
+style="width:50px; height:50px; border:0; position: absolute; top: 470px; left: 1240px;">
+</a>
+
+<a href="https://www.snapchat.com/">
+  <img src="snapchat.png"
+style="width:55px; height:51px; border:0; position: absolute; top: 535px; left: 1244px;">
+</a>
+
+<footer>
+<h5> Created by: Angie Mendieta-Hernandez </h5>
+<h5> Questions? Contact Information: <a href="mailto:21ahernandez2@go.dsdmail.net"> 21ahernandez2@go.dsdmail.net</a>.</h5>
+</footer>
+
+
+<button onclick="typeWriter()">Footer - click me (General things/Note to Mr.Simonsen)</button>
+<h5 id="demo"></h5>
+
+</div>
+
+<script>
+
+var cheering = new Audio();
+cheering.src = "cheering.mp3";
+
+var Bounce = new Audio();
+Bounce.src = "Bounce.mp3";
+
+var soccer = new Audio();
+soccer.src = "soccer.mp3";
+
+var smack = new Audio();
+smack.src = "smack.mp3";
+
+var water = new Audio();
+water.src = "water.mp3";
+
+var tennisball = new Audio();
+tennisball.src = "tennisball.mp3";
+
+var bowling = new Audio();
+bowling.src = "bowling.mp3";
+
+var Bop = new Audio();
+Bop.src = "Bop.mp3";
+
+var typing = new Audio();
+typing.src = "typing.mp3";
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+var i = 1;
+var txt = '  General things: My website was created to promote Nuames new athletic club. The first website is my home page. On the homepage their are social media website links that provide more information about the club. Also on the homepage, the images on the slideshow make sound if you click on them. Each picture makes a different sound. In the table on my homepage there lists links to my other websites. The first link has information on what the club is about and when it starts. The second one shows prices and merchandise sold. The third one has a calender for events and important dates. The last link talks about what sports are included. Note (for Mr.Simonsen): Creating a website was a bit difficult at first, but I learned many useful coding tricks. While designing my website, I basically learned how to manage and type all the requirements needed for designing a website (adding images, creating links, embedding files, etc.). I also learned a few extra things that have made my website stand out like fancy backgrounds, slideshows, buttons, etc. This project gave me a really fun and interesting experience, along with the idea that I might start considering a career in computers.';
+var speed = 10;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
+</body>
+</html>

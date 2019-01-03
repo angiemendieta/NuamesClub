@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events Page</title>
+<link rel="stylesheet" type="text/css" href="events.css">
+<body>
+  <audio src="music1.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
+<body bgcolor="black">
+
+  <div class="topnav">
+
+    <div class="login-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Password" name="psw">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div style="position: relative; left: 0; top: 0;">
+    <img src="background3.jpg" style="position: relative; top: 0px; left: 0px;" width="1350" height="623.5" class="stone"/>
+    <img src="whitebackground.jpg" style="position: absolute; top: 120px; left: 140px;" width="1100" height="470"/>
+    <img src="darkred.jpg" width="1100" style="position: absolute; top: 120px; left: 140px;" height="35"/>
+
+
+    <div style="position: absolute; top: 107px; left: 470px;">
+
+      <table border="1" style="width:120%" align="center">
+      <tr>
+        <p><th><b><nav><a href="index.html" onmousedown="Bop.play()" target="_blank">Home</a></nav></th>
+        <p><th><b><nav><a href="new.html" onmousedown="Bop.play()" target="_blank">About</a></nav></th>
+        <p><th><b><nav><a href="prices.html" onmousedown="Bop.play()" target="_blank">Prices and Merchandise</a></nav></th>
+        <p><th><b><nav><a href="sports.html" onmousedown="Bop.play()" target="_blank">Sports</a></nav></th>
+      </tr>
+      </table>
+      </div>
+
+  <article>
+      <header>
+
+      <div style="position: absolute; top: 160px; left: 180px;"><font color="black"><h4>Events:</h4></font></div>
+
+      <div style="position: absolute; top: 190px; left: 180px;"><font color="black"><p>Events will be displayed in January. If you want to join, get the remind app for the next update</p></font></div>
+
+      <div style="position: absolute; top: 220px; left: 180px;"><font color="black"><p>Remind app text: @bbahea to the number: 81010 to join the app. Don't forget to invite your friends. Feel free to join at anytime</p></font></div>
+    </header>
+    </article>
+
+      <footer>
+      <h5 style="color: white;"> Created by: Angie Mendieta-Hernandez </h5>
+      <h5 style="color: white;"> Questions? Contact Information: <a href="mailto:21ahernandez2@go.dsdmail.net"> 21ahernandez2@go.dsdmail.net</a>.</h5>
+      </footer>
+
+
+      <button onclick="typeWriter()">Footer - click me (General things/Note to Mr.Simonsen)</button>
+      <h5 id="demo" style="color: white;"</h5>
+
+
+<script>
+  var Bop = new Audio();
+  Bop.src = "Bop.mp3";
+
+  var i = 1;
+  var txt = '  General things: My website was created to promote Nuames new athletic club. The first website is my home page. On the homepage their are social media website links that provide more information about the club. Also on the homepage, the images on the slideshow make sound if you click on them. Each picture makes a different sound. In the table on my homepage there lists links to my other websites. The first link has information on what the club is about and when it starts. The second one shows prices and merchandise sold. The third one has a calender for events and important dates. The last link talks about what sports are included. Note (for Mr.Simonsen): Creating a website was a bit difficult at first, but I learned many useful coding tricks. While designing my website, I basically learned how to manage and type all the requirements needed for designing a website (adding images, creating links, embedding files, etc.). I also learned a few extra things that have made my website stand out like fancy backgrounds, slideshows, buttons, etc. This project gave me a really fun and interesting experience, along with the idea that I might start considering a career in computers.';
+  var speed = 10;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+</script>
+
+</body>
+</head>
